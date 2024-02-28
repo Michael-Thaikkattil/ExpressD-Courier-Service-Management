@@ -53,3 +53,10 @@
 .video-slide.active{
     clip-path: circle(150% at 0 50%);
 }
+.home .content{
+    z-index: 999;
+    position: relative;
+}
+.home .content.active{
+    display: block;
+}

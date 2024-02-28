@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit{
     // Add JavaScript code here
     const btns=document.querySelectorAll(".nav-btn");
     const slides=document.querySelectorAll(".video-slide");
+   
   var sliderNav=function(manual: number){
     btns.forEach((btn)=>{
       btn.classList.remove("active");
@@ -23,8 +24,10 @@ export class HomeComponent implements OnInit{
     slides.forEach((slide)=>{
       slide.classList.remove("active");
     });
+    
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
+   
   }
   btns.forEach((btn,i ) => {
     btn.addEventListener("click",() => {
